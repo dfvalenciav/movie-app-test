@@ -13,6 +13,11 @@
 		140B3CFE2842D957003FF134 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 140B3CFC2842D957003FF134 /* Main.storyboard */; };
 		140B3D002842D958003FF134 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 140B3CFF2842D958003FF134 /* Assets.xcassets */; };
 		140B3D032842D958003FF134 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 140B3D012842D958003FF134 /* LaunchScreen.storyboard */; };
+		140B3D0F2842DBE6003FF134 /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 140B3D0E2842DBE6003FF134 /* Colors.xcassets */; };
+		140B3D112842DF67003FF134 /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 140B3D102842DF67003FF134 /* Colors.swift */; };
+		140B3D132842DF88003FF134 /* LoginButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 140B3D122842DF88003FF134 /* LoginButton.swift */; };
+		140B3D152842DFC3003FF134 /* GradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 140B3D142842DFC3003FF134 /* GradientView.swift */; };
+		140B3D172842DFEA003FF134 /* LoginTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 140B3D162842DFEA003FF134 /* LoginTextField.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +29,11 @@
 		140B3CFF2842D958003FF134 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		140B3D022842D958003FF134 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		140B3D042842D958003FF134 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		140B3D0E2842DBE6003FF134 /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
+		140B3D102842DF67003FF134 /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
+		140B3D122842DF88003FF134 /* LoginButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginButton.swift; sourceTree = "<group>"; };
+		140B3D142842DFC3003FF134 /* GradientView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientView.swift; sourceTree = "<group>"; };
+		140B3D162842DFEA003FF134 /* LoginTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginTextField.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,13 +68,50 @@
 			children = (
 				140B3CF62842D957003FF134 /* AppDelegate.swift */,
 				140B3CF82842D957003FF134 /* SceneDelegate.swift */,
-				140B3CFA2842D957003FF134 /* ViewController.swift */,
-				140B3CFC2842D957003FF134 /* Main.storyboard */,
-				140B3CFF2842D958003FF134 /* Assets.xcassets */,
-				140B3D012842D958003FF134 /* LaunchScreen.storyboard */,
 				140B3D042842D958003FF134 /* Info.plist */,
+				140B3D0C2842D9EA003FF134 /* Controller */,
+				140B3D0B2842D9D6003FF134 /* View */,
+				140B3D0A2842D9CC003FF134 /* Model */,
+				140B3D0D2842DA1A003FF134 /* Assets */,
 			);
 			path = "movie-test";
+			sourceTree = "<group>";
+		};
+		140B3D0A2842D9CC003FF134 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		140B3D0B2842D9D6003FF134 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				140B3D102842DF67003FF134 /* Colors.swift */,
+				140B3D122842DF88003FF134 /* LoginButton.swift */,
+				140B3D142842DFC3003FF134 /* GradientView.swift */,
+				140B3D162842DFEA003FF134 /* LoginTextField.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		140B3D0C2842D9EA003FF134 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				140B3CFA2842D957003FF134 /* ViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		140B3D0D2842DA1A003FF134 /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				140B3CFC2842D957003FF134 /* Main.storyboard */,
+				140B3D012842D958003FF134 /* LaunchScreen.storyboard */,
+				140B3CFF2842D958003FF134 /* Assets.xcassets */,
+				140B3D0E2842DBE6003FF134 /* Colors.xcassets */,
+			);
+			path = Assets;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -126,6 +173,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				140B3D032842D958003FF134 /* LaunchScreen.storyboard in Resources */,
+				140B3D0F2842DBE6003FF134 /* Colors.xcassets in Resources */,
 				140B3D002842D958003FF134 /* Assets.xcassets in Resources */,
 				140B3CFE2842D957003FF134 /* Main.storyboard in Resources */,
 			);
@@ -138,7 +186,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				140B3D132842DF88003FF134 /* LoginButton.swift in Sources */,
 				140B3CFB2842D957003FF134 /* ViewController.swift in Sources */,
+				140B3D152842DFC3003FF134 /* GradientView.swift in Sources */,
+				140B3D172842DFEA003FF134 /* LoginTextField.swift in Sources */,
+				140B3D112842DF67003FF134 /* Colors.swift in Sources */,
 				140B3CF72842D957003FF134 /* AppDelegate.swift in Sources */,
 				140B3CF92842D957003FF134 /* SceneDelegate.swift in Sources */,
 			);
